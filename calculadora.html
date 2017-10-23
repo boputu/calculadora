@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <script type="text/javascript" src="calculadora.js"></script>
+    <div class="cuadro">
+
+      <div class="dentro">
+
+      <div id="pantallaca" ></div>
+      <br>
+      <input type="button" name="" class="izquierda" value="C" onclick="C();">
+      <input type="button" name="" class="izquierda" value="CE" onclick="CE(pantallaca.innerHTML);">
+      <br>
+      <input type="button" name="" id="numeros" class="numeros" value="1" onclick="numero(1);">
+      <input type="button" name="" id="numeros" class="numeros" value="2" onclick="numero(2);">
+      <input type="button" name="" id="numeros" class="numeros" value="3" onclick="numero(3);">
+      <input type="button" name="" class="simbolos" value="+" onclick="numero('+');">
+      <br>
+      <input type="button" name="" id="numeros" class="numeros" value="4" onclick="numero(4);">
+      <input type="button" name="" id="numeros" class="numeros" value="5" onclick="numero(5);">
+      <input type="button" name="" id="numeros" class="numeros" value="6" onclick="numero(6);">
+      <input type="button" name="" class="simbolos" value="*" onclick="numero('*');">
+      <br>
+      <input type="button" name="" id="numeros" class="numeros" value="7" onclick="numero(7);">
+      <input type="button" name="" id="numeros" class="numeros" value="8" onclick="numero(8);">
+      <input type="button" name="" id="numeros" class="numeros" value="9" onclick="numero(9);">
+      <input type="button" name="" class="simbolos" value="π" onclick="numero(Math.PI);">
+      <br>
+      <input type="button" name="" id="numeros" class="numeros" value="0" onclick="numero(0);">
+      <input type="button" name="" class="igual" value="=" onclick="operacion(pantallaca.innerHTML); cambia();">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
